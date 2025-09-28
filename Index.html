@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group9-DegreeAdmin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degree Admin Team Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    /* Top green background */
+    .header {
+      background-color: #cfe8cf; /* light green */
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Blue title box */
+    .title-box {
+      background-color: #dce9f8; /* light blue */
+      display: inline-block;
+      padding: 30px 50px;
+      font-size: 32px;
+      font-weight: bold;
+      border: 1px solid #9bb6d3;
+    }
+
+    /* Blue section for buttons */
+    .main {
+      background-color: #dce9f8;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    /* Green buttons */
+    .button {
+      background-color: #cfe8cf;
+      border: none;
+      border-radius: 20px;
+      padding: 30px 50px;
+      margin: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .button:hover {
+      background-color: #b2d6b2;
+    }
+  </style>
 </head>
 <body>
-    <div style="text-align: center;">
-    <h1>Schedule Planner</h1>
-    <h3> Please Login below</h3>
-    
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-    <br>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <br>
-    
-    <button type="submit">Login</button>
-    <br>
-    
-    <span class="psw">Forgot <a href="#">password?</a></span>
+  <!-- Header with title -->
+  <div class="header">
+    <div class="title-box">
+      Degree Admin <br>
+      Team website
     </div>
-  
+  </div>
+
+  <!-- Main section with buttons -->
+  <div class="main">
+    <button class="button">Reports</button>
+    <button class="button">Overview</button>
+    <button class="button">Information</button>
+  </div>
 </body>
 </html>
+
