@@ -13,19 +13,29 @@
 
     /* Top green background */
     .header {
+      padding: 10px;
       background-color: #cfe8cf; /* light green */
-      padding: 40px;
-      text-align: center;
     }
-
-    /* Blue title box */
+    
+    /* Title box */
     .title-box {
-      background-color: #dce9f8; /* light blue */
       display: inline-block;
       padding: 30px 50px;
       font-size: 32px;
       font-weight: bold;
-      border: 1px solid #9bb6d3;
+    }
+    
+    /* Back button */
+    .back-button {
+      display: inline-block;
+      background-color: #cfe8cf;
+      border: none;
+      padding: 20px 40px;
+      font-size: 20px;
+      cursor: pointer;
+	  position: absolute; /* Manually setting position */
+      top: 1.5rem;
+  	  left: 37rem;
     }
 
     /* Blue section for buttons */
@@ -47,6 +57,10 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
     
+    .button:hover {
+      background-color: #b2d6b2;
+    }
+    
     /* Green text boxes */
     .text-box {
       background-color: #cfe8cf; /* light blue */
@@ -56,17 +70,17 @@
       border: 1px solid #9bb6d3;
     }
 
-    .button:hover {
-      background-color: #b2d6b2;
-    }
   </style>
 </head>
 <body>
   <!-- Header with title -->
   <div class="header">
+  
     <div class="title-box">
-      Reports <br>
+        Reports     
     </div>
+
+    <button class="back-button"onclick="">Back</button> 
   </div>
 
   <!-- Main section with buttons and descriptions -->
@@ -95,4 +109,3 @@
 </body>
     
 </html>
-
