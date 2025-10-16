@@ -8,9 +8,10 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      background-color: #ad8678; /* Dark brown fills the whole page */
+      min-height: 100vh; /* ensures the background covers the full screen */
     }
-
+    
     /* Top light brown background */
     .header {
       padding: 10px;
@@ -23,6 +24,8 @@
       padding: 30px 50px;
       font-size: 32px;
       font-weight: bold;
+      background-color: #edddc4;   /* light brown directly behind text */
+      border-radius: 10px;         /* rounded corners look cleaner */
     }
         
     /* light brown back button */
@@ -40,8 +43,11 @@
     
     /* Dark brown background behind paragraph */
     .description-container {
+      height: 100%;
+      margin: 0;
       background-color: #ad8678; /* Dark brown */
-      padding: 40px 0;
+      padding: 100px 0;
+      
     }
 
     /* Paragraph box */
@@ -55,6 +61,13 @@
       font-size: 18px;
       line-height: 1.6;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+     /* Dark brown half of the page */
+    .description-background {
+      height: 100%;
+      margin: 0 auto;
+      background-color: #edddc4
     }
 
   </style>
@@ -73,9 +86,11 @@
   <div class="description-container">
     <div class="description">
       <p>
-        This section provides a brief overview of the Degree Admin project. This has not been filled out yet, so come back later for more details!
+        This project is a collaborative group effort focused on designing and developing a student schedule planner. The goal is to provide students with an easy and efficient way to create personalized class schedules based on their academic needs. Users will be able to enter their minimum and maximum credit hours, and the system will automatically generate multiple schedule options that meet those requirements. This allows students to explore different combinations of classes, compare their options, and select the schedule that works best for their preferences and availability. Ultimately, the project aims to simplify the scheduling process and help students plan their semesters more effectively.
+
       </p>
     </div>
   </div>
 </body>
 </html>
+
