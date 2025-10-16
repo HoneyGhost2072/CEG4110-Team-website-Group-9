@@ -11,26 +11,36 @@
       background-color: #f0f0f0;
     }
 
-    /* Top green background */
+    /* Top light brown background */
     .header {
-      background-color: #cfe8cf; /* light green */
-      padding: 40px;
-      text-align: center;
+      padding: 10px;
+      background-color: #edddc4; /* light brown */
     }
 
-    /* Blue title box */
+    /* light brown title box */
     .title-box {
-      background-color: #dce9f8; /* light blue */
       display: inline-block;
       padding: 30px 50px;
       font-size: 32px;
       font-weight: bold;
-      border: 1px solid #9bb6d3;
     }
-
-    /* Light blue background behind paragraph */
+        
+    /* light brown back button */
+    .back-button {
+      display: inline-block;
+      background-color: #edddc4;
+      border: none;
+      padding: 20px 40px;
+      font-size: 20px;
+      cursor: pointer;
+   	  position: absolute; /* Manually setting position */
+      top: 1.5rem;
+  	  left: 83%;
+    }
+    
+    /* Dark brown background behind paragraph */
     .description-container {
-      background-color: #dce9f8; /* light blue */
+      background-color: #ad8678; /* Dark brown */
       padding: 40px 0;
     }
 
@@ -55,9 +65,11 @@
     <div class="title-box">
       Project Overview
     </div>
+        <button class="back-button"onclick="document.location='index.html'">Back</button> 
+
   </div>
 
-  <!-- Light blue section behind paragraph -->
+  <!-- Dark brown section behind paragraph -->
   <div class="description-container">
     <div class="description">
       <p>
@@ -67,4 +79,3 @@
   </div>
 </body>
 </html>
-
