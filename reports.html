@@ -65,12 +65,20 @@
     
     /* light brown text boxes */
     .text-box {
-      background-color: #edddc4; /* light brown */
-      display: inline-block;
-      padding: 35px 70px;
-      font-size: 20px;
-      border: 1px solid #9bb6d3;
-    }
+  	  background-color: #edddc4; /* light brown */
+  	  display: inline-flex;          /* keeps text centered nicely */
+  	  justify-content: center;
+  	  align-items: center;
+
+ 	  width: 450px;                  /* FIXED width */
+  	  height: 150px;                 /* FIXED height */
+
+  	  font-size: 20px;
+  	  border: 1px solid #9bb6d3;
+  	  border-radius: 30px;           /* optional rounded corners */
+  	  padding: 0;                    /* remove padding since size is fixed */
+  	  text-align: center;
+	}
 
   </style>
 </head>
